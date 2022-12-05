@@ -150,6 +150,7 @@ button {
     margin-bottom: 1em;
     font-family: 'Bangers', cursive;
     font-size: large;
+    cursor: pointer;
 }
 
 button:hover {
