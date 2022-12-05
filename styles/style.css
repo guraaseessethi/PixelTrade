@@ -102,6 +102,7 @@ button:hover {
     background-color: #ff6b6b;
     transition: 0.5s;
     transform: scale(1.05);
+    color: #353b48;
 }
 
 td:nth-child(1):hover {
