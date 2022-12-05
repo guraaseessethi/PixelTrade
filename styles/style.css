@@ -80,7 +80,6 @@ h1 {
 table {
     border-collapse: separate;
     border-spacing: 10px;
-    *border-collapse: expression('separate', cellSpacing='10px');
 }
 
 td {
@@ -157,7 +156,6 @@ button:hover {
     background-color: #ff6b6b;
     transition: 0.5s;
     transform: scale(1.05);
-    color: #353b48;
 }
 
 td:nth-child(1):hover {
@@ -225,4 +223,10 @@ div.head p {
 
 h2.heading {
     text-align: center;
+}
+
+a:hover {
+    color: #ff6b6b;
+    font-size: large;
+    transition: 0.25s;
 }
