@@ -222,3 +222,7 @@ p {
 div.head p {
     text-align: center;
 }
+
+h2.heading {
+    text-align: center;
+}
