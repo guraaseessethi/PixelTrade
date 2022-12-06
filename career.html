@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO link css -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Career</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="navi">
+                <li class="navi">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="navi">
+                    <a href="pc.html">Desktops</a>
+                </li>
+                <li class="navi">
+                    <a href="laptop.html">Laptops</a>
+                </li>
+                <li class="navi">
+                    <a href="about.html">Company</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div class="head">
+                <h1>JOIN OUR TEAM</h1>
+                <p></p>
+            </div>
+            <main>
+                <section class="form">
+                    <div class="form">
+                        <form action="./thanks.html" netlify method="post">
+                            <fieldset>
+                                <h2 class="f">Tell us about yourself</h2>
+                                <div>
+                                    <label for="firstName">First Name:<strong>*</strong></label><br>
+                                    <input type="text" name="firstName" id="firstName" required>
+                                </div>
+
+                                <div>
+                                    <label for="lastName">Last Name:<strong>*</strong></label><br>
+                                    <input type="text" name="lastName" id="lastName" required>
+                                </div>
+
+                                <div>
+                                    <label for="eMail">E-mail:<strong>*</strong></label><br>
+                                    <input type="email" name="eMail" id="eMail" required>
+                                </div>
+
+                                <div>
+                                    <label for="phone">Phone:</label><br>
+                                    <input type="tel" name="phone" id="phone">
+                                </div>
+
+                                <div>
+                                    <label for="query">Job Feilds</label><br>
+                                    <select name="query" id="query">
+                                        <option value="select">Select your option</option>
+                                        <option value="webDesign">Web Design</option>
+                                        <option value="marketing">Marketing</option>
+                                        <option value="social">Social Media handler</option>
+                                        <option value="business">Business Team</option>
+                                    </select>
+                                </div>
+                                <div class="experiance">
+                                    <fieldset class="experiance">
+                                        <legend>Experiance</legend>
+
+                                        <div>
+                                            <label for="cName">Company Name:<strong>*</strong></label><br>
+                                            <input type="text" name="cName" id="cName" required>
+                                        </div>
+                                        <div>
+                                            <label for="eName">Employer Name:<strong>*</strong></label><br>
+                                            <input type="text" name="eName" id="eName" required>
+                                        </div>
+                                        <div>
+                                            <label for="sDate">Start Date<strong>*</strong></label><br>
+                                            <input type="date" name="sDate" id="sDate" required>
+                                        </div>
+                                        <div>
+                                            <label for="eDate">End Date<strong>*</strong></label><br>
+                                            <input type="date" name="eDate" id="eDate" required>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <label for="message">Message:</label><br>
+                                    <textarea name="message" id="message" cols="30" rows="10"
+                                        placeholder="Please type your message here to stand out!"></textarea>
+                                </div>
+                            </fieldset>
+
+                            <p>
+                                <input type="submit" value="Apply Now" class="submit">
+                            </p>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            &copy; Guraasees and Dakota --- PC Building Site
+        </footer>
+    </div>
+</body>
+
+</html>
