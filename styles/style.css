@@ -257,7 +257,7 @@ section.team {
     position: relative;
     width: 100%;
     height: 100%;
-    
+
     transition: transform 1.6s;
     transform-style: preserve-3d;
 }
@@ -410,18 +410,15 @@ div.footer {
     transform: scale(1.1);
 }
 
-.flip-card-back p{
+.flip-card-front p,
+.flip-card-back p {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.flip-card-front p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.about td p{
+
+.about td p {
     display: flex;
     justify-content: center;
     align-items: center;
