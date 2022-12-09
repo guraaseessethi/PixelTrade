@@ -1,12 +1,47 @@
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 1250px) {
+
     /*all tables*/
-    #content-wrap table, tbody, th, td, tr{
+    #content-wrap table,
+    tbody,
+    th,
+    td,
+    tr {
         display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.faqs {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5em;
+
+    }
+
+    .flip-card,
+    .flip-card2,
+    .flip-card3,
+    .flip-card4 {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
     }
 }
 
-@media only screen and (max-width: 500px){
-    .nav-bar .navi{
+@media only screen and (max-width: 500px) {
+    .nav-bar .navi {
         font-size: 20px;
+
+    }
+
+    div.form {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+    .form p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
