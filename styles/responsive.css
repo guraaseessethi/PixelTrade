@@ -1,0 +1,12 @@
+@media only screen and (max-width: 960px){
+    /*all tables*/
+    #content-wrap table, tbody, th, td, tr{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .nav-bar .navi{
+        font-size: 20px;
+    }
+}
