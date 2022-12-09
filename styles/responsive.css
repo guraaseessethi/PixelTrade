@@ -30,6 +30,11 @@
 
 @media only screen and (max-width: 500px) {
     .nav-bar .navi {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        padding-left: 10px;
+        padding-right: 15px;
         font-size: 20px;
 
     }
@@ -43,5 +48,13 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    button {
+        width: 98%;
     }
 }
