@@ -1,35 +1,37 @@
 @media only screen and (max-width: 1250px) {
-    /* Adjustments for tables */
-    #content-wrap table,
-    tbody,
-    th,
-    td,
-    tr {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    main {
+        padding: 0 2em; /* Reduced padding for smaller screens */
     }
-
-    .form {
-        padding-right: 2em;
-        padding-left: 2em;
+    
+    section.form-section {
+        padding: 1em;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .navi {
-        font-size: 20px;
-    }
-
-    form div {
+    .nav-bar .navi {
         flex-direction: column;
+        font-size: 18px;
     }
 
-    table {
+    div.form {
+        padding: 1em;
+    }
+
+    form fieldset div {
+        margin-bottom: 1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+        width: calc(100% - 20px); /* Adjusted width for smaller screens */
+    }
+
+    button {
         width: 100%;
-    }
-
-    .submit {
-        width: 98%;
     }
 }
