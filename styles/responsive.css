@@ -1,6 +1,6 @@
+/* Media Queries for Responsive Design */
 @media only screen and (max-width: 1250px) {
-
-    /* All tables */
+    /* Adjustments for medium screens */
     #content-wrap table,
     tbody,
     th,
@@ -18,10 +18,7 @@
         padding-bottom: 5em;
     }
 
-    .flip-card,
-    .flip-card2,
-    .flip-card3,
-    .flip-card4 {
+    .flip-card, .flip-card2, .flip-card3, .flip-card4 {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
     }
@@ -35,18 +32,17 @@
 }
 
 @media only screen and (max-width: 500px) {
+    /* Adjustments for small screens */
     .nav-bar .navi {
         display: flex;
         justify-content: space-between;
         overflow: hidden;
-        padding-left: 10px;
-        padding-right: 15px;
+        padding: 0 10px;
         font-size: 20px;
     }
 
     div.form {
-        padding-right: 2em;
-        padding-left: 2em;
+        padding: 0 2em;
     }
 
     .form p {
