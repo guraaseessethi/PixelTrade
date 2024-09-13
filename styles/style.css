@@ -33,7 +33,6 @@ ul.navi {
 }
 
 li.navi {
-
     font-family: 'Bangers', cursive;
     padding-left: 1em;
     padding-right: 1em;
@@ -86,10 +85,9 @@ td {
     background-color: #353b48;
     padding-left: 1.25em;
     padding-right: 1.25em;
-    margin: 12px 12px 12px 12px;
-    padding: 12px 12px 12px 12px;
+    margin: 12px;
+    padding: 12px;
     padding-bottom: 10%;
-
 }
 
 h2,
@@ -135,7 +133,6 @@ a {
     color: #ee5253;
 }
 
-
 button {
     color: #222f3e;
     background-color: #ee5253;
@@ -156,20 +153,8 @@ button:hover {
     transform: scale(1.05);
 }
 
-td:nth-child(1):hover {
-    transform: scale(1.05);
-    background-color: #576574;
-    box-shadow: #ee5253 0px 3px 8px;
-    transition: 0.5s;
-}
-
-td:nth-child(2):hover {
-    transform: scale(1.05);
-    background-color: #576574;
-    box-shadow: #ee5253 0px 3px 8px;
-    transition: 0.5s;
-}
-
+td:nth-child(1):hover,
+td:nth-child(2):hover,
 td:nth-child(3):hover {
     transform: scale(1.05);
     background-color: #576574;
@@ -180,7 +165,6 @@ td:nth-child(3):hover {
 strong {
     color: #ff6b6b;
     font-family: 'Bangers', cursive;
-    ;
 }
 
 footer {
@@ -195,19 +179,16 @@ footer {
     margin: 0;
     background-color: #ee5253;
     color: #222f3e;
-    bottom: 0;
     width: 100%;
 }
 
 #page-container {
     position: relative;
     min-height: 100vh;
-
 }
 
 #content-wrap {
     padding-bottom: 5em;
-
 }
 
 p {
@@ -238,7 +219,6 @@ section.team {
     display: flex;
     justify-content: center;
     justify-items: center;
-
 }
 
 .flip-card,
@@ -249,45 +229,36 @@ section.team {
     width: 300px;
     height: 450px;
     perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
-
     transition: transform 1.6s;
     transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner,
 .flip-card2:hover .flip-card-inner,
-.flip-card3:hover .flip-card-inner,
-.flip-card4:hover .flip-card-inner {
+flip-card3:hover .flip-card-inner,
+flip-card4:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
-    /* Safari */
     backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
     background-color: #353b48;
     color: #fff;
 }
 
-/* Style the back side */
 .flip-card-back {
     background-color: #576574;
     color: white;
