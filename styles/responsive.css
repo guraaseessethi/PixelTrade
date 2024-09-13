@@ -1,6 +1,5 @@
 @media only screen and (max-width: 1250px) {
-
-    /* All tables */
+    /* Adjustments for tables */
     #content-wrap table,
     tbody,
     th,
@@ -11,62 +10,26 @@
         margin-right: auto;
     }
 
-    div.faqs {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 5em;
-    }
-
-    .flip-card,
-    .flip-card2,
-    .flip-card3,
-    .flip-card4 {
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-    }
-
-    .about td p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .form {
+        padding-right: 2em;
+        padding-left: 2em;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .nav-bar .navi {
-        display: flex;
-        justify-content: space-between;
-        overflow: hidden;
-        padding-left: 10px;
-        padding-right: 15px;
+    .navi {
         font-size: 20px;
     }
 
-    div.form {
-        padding-right: 2em;
-        padding-left: 2em;
-    }
-
-    .form p {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    form div {
+        flex-direction: column;
     }
 
     table {
         width: 100%;
     }
 
-    button {
+    .submit {
         width: 98%;
-    }
-
-    .about td p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 }
