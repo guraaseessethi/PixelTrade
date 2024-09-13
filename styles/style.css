@@ -290,7 +290,7 @@ div.form {
 form {
     display: flex;
     flex-direction: column;
-    gap: 1.5em; /* Increased vertical spacing */
+    gap: 0.5em; /* Adjusted vertical spacing */
 }
 
 form div {
