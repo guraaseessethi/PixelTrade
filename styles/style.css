@@ -1,3 +1,4 @@
+/* General Styling */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 html,
@@ -14,7 +15,7 @@ body {
 }
 
 header {
-    padding: 0%;
+    padding: 0;
     margin: 0;
     background-color: #ee5253;
 }
@@ -36,7 +37,6 @@ li.navi {
     font-family: 'Bangers', cursive;
     padding-left: 1em;
     padding-right: 1em;
-    display: inline-block;
 }
 
 li.navi a {
@@ -45,7 +45,6 @@ li.navi a {
 }
 
 li.navi a:hover {
-    text-decoration: none;
     color: #576574;
     font-size: xx-large;
     transition: 0.5s;
@@ -83,11 +82,8 @@ table {
 
 td {
     background-color: #353b48;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
-    margin: 12px;
     padding: 12px;
-    padding-bottom: 10%;
+    margin: 12px;
 }
 
 h2,
@@ -294,19 +290,23 @@ div.form {
 
 form {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form div {
+    display: flex;
+    align-items: center;
     gap: 1em;
 }
 
 form label {
     flex: 1 1 150px; /* Adjust width of labels */
-    margin-bottom: 0;
 }
 
 form input,
 form select {
     flex: 2 1 300px; /* Adjust width of inputs and selects */
-    margin-bottom: 1em;
 }
 
 textarea {
@@ -418,4 +418,76 @@ div.footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+@media only screen and (max-width: 1250px) {
+    /* All tables */
+    #content-wrap table,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.faqs {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5em;
+    }
+
+    .flip-card,
+    .flip-card2,
+    .flip-card3,
+    .flip-card4 {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .about td p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-bar .navi {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        padding-left: 10px;
+        padding-right: 15px;
+        font-size: 20px;
+    }
+
+    div.form {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+    .form p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    button {
+        width: 98%;
+    }
+
+    .about td p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
