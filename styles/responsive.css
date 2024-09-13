@@ -1,37 +1,71 @@
 @media only screen and (max-width: 1250px) {
-    main {
-        padding: 0 2em; /* Reduced padding for smaller screens */
+    /* All tables */
+    #content-wrap table,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
-    section.form-section {
-        padding: 1em;
+
+    div.faqs {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5em;
+    }
+
+    .flip-card,
+    .flip-card2,
+    .flip-card3,
+    .flip-card4 {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .about td p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 
 @media only screen and (max-width: 500px) {
     .nav-bar .navi {
-        flex-direction: column;
-        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        padding-left: 10px;
+        padding-right: 15px;
+        font-size: 20px;
     }
 
     div.form {
-        padding: 1em;
+        padding-right: 2em;
+        padding-left: 2em;
     }
 
-    form fieldset div {
-        margin-bottom: 1em;
+    .form p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="date"],
-    select,
-    textarea {
-        width: calc(100% - 20px); /* Adjusted width for smaller screens */
+    table {
+        width: 100%;
     }
 
     button {
-        width: 100%;
+        width: 98%;
+    }
+
+    .about td p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
